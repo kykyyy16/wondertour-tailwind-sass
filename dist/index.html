@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Tour</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
+
+</head>
+
+<body>
+
+    <header class="header py-5 lg:py-0 shadow-lg lg:shadow-none">
+        <div class="container">
+            <div class="header_wrapper flex justify-between">
+                <div class="flex gap-2 items-center">
+                    <div class="toggle_menu lg:hidden cursor-pointer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header_logo">
+                        <img src="./img/logo-default.-188x19.png" alt="">
+                    </div>
+                </div>
+
+                <div class="header_details lg:static lg:flex items-center gap-10">
+                    <ul class="lg:flex">
+                        <li class="flex gap-3 lg:border-r-2 lg:px-5 my-2">
+                            <p>
+                                <i class="fa-regular fa-clock text-[#01b3a7]"></i>
+                                <p>09:00AM — 05:00PM</p>
+                            </p>
+                        </li>
+                        <li class="flex gap-3 lg:px-5 my-2">
+                            <p>
+                                <i class="fa-solid fa-phone text-[#01b3a7]"></i>
+                                <a href="tel:13239134688">+1 323-913-4688</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- <div class="quote_btn">
+                        <a href="" class="block border-[3px] border-[#01b3a7] py-2 px-3 ">Get a Free Quote</a>
+                    </div> -->
+                    <button class="quote_btn border-2 border-[#01b3a7] py-2 px-6 relative overflow-hidden hover:border-[#50ba87]">
+                        <span>Get a Free Quote</span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="toggle_details cursor-pointer lg:hidden">
+                    <span></span>
+                    <span class="my-1"></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_nav lg:bg-[#162c44]">
+            <div class="container">
+                <div class="header_menu lg:static lg:flex lg:justify-between items-center lg:w-full">
+                    <div class="social_links lg:order-2 border-b-2 lg:border-none py-5 lg:py-0">
+                        <ul class="flex justify-center gap-5">
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <nav class="nav">
+                        <ul class="lg:flex gap-5 lg:order-1">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Our Tours</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Pages</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner relative">
+        <div class="custom_slider">
+            <div>
+            <div class="slider_item bg-[url('./img/slider-1.jpg')] h-[90vh] bg-no-repeat bg-center">
+                <div class="container">
+                    <div class="banner_content">
+                        <p class=" font-medium">ENJOY THE BEST DESTINATIONS WITH OUR TRAVEL AGENCY</p>
+                        <h2 class="title_responsive font-medium">Explore <span class="font-bold">The World</span></h2>
+                        <a href="" class="border border-white p-5 mt-5 inline-block">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="slider_item bg-[url('./img/slider-2.jpg')] h-[90vh] bg-no-repeat bg-center">
+                <div class="container">
+                    <div class="banner_content">
+                        <p class=" font-medium">A TEAM OF PROFESSIONAL TRAVEL EXPERTS</p>
+                        <h2 class="title_responsive">Trust <span class="font-bold">Our Experience</span></h2>
+                        <a href="" class="border border-white p-5 mt-5 inline-block">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="slider_item bg-[url('./img/slider-3.jpg')] h-[90vh] bg-no-repeat bg-center">
+                <div class="container">
+                    <div class="banner_content">
+                        <p class=" font-medium">BUILD YOUR NEXT HOLIDAY TRIP WITH US</p>
+                        <h2 class="font-medium title_responsive">Create <span class="font-bold">Your Tour</span></h2>
+                        <a href="" class="border border-white p-5 mt-5 inline-block">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other_tours">
+        <div class="container lg:mt-[-2rem] z-10">
+            <div class="other_tours_wrapper">
+                <div class="other_tours_content items-center md:flex md:flex-row gap-8 relative">
+                    <div class="other_tours_box overflow-hidden mb-5 md:mb-0">
+                        <div class="relative text-center items-center transition-all duration-[.2s] ease-in block">
+                            <a href=""><img src="./img/other-tours-1.jpg" alt="" class="w-full"></a>
+                            <h2 class="text-center text-white font-bold">Balloon Flights</h2>
+                        </div>
+                    </div>
+                    <div class="other_tours_box overflow-hidden mb-5 md:mb-0">
+                        <div class="relative text-center items-center transition-all duration-[.2s] ease-in block">
+                            <a href=""><img src="./img/other-tours-2.jpg" alt="" class="w-full"></a>
+                            <h2 class="text-center text-white font-bold">Mountain Holiday</h2>
+                        </div>
+                    </div>
+                    <div class="other_tours_box overflow-hidden mb-5 md:mb-0">
+                        <div class="relative text-center items-center transition-all duration-[.2s] ease-in block">
+                            <a href=""><img src="./img/other-tours-3.jpg" alt="" class="w-full"></a>
+                            <h2 class="text-center text-white font-bold">Beach Holidays</h2>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="link_text cursor-pointer flex relative items-center justify-center my-10">
+                <h2 class="mr-2">Other Tours </h2>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about py-10">
+        <div class="container">
+            <div class="about_wrapper grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <img src="./img/discover.jpg" alt="" class="w-full">
+                <div class="about_content">
+                    <h2 class="font-semibold text-[2.5rem] mb-2">Discover New Horizons</h2>
+                    <ul class="about_nav md:flex md:justify-start mb-2 text-xl gap-5 text-[#a99da9]">
+                        <li id="nav-1" class=" border-b-2 px-2 py-2 cursor-pointer active">ABOUT US</li>
+                        <li id="nav-2" class=" border-b-2 px-2 py-2 cursor-pointer">WHY CHOOSE US</li>
+                        <li id="nav-3" class=" border-b-2 px-2 py-2  cursor-pointer">OUR MISSION</li>
+                    </ul>
+                    <div id="nav-1-content" class="nav_content active">
+                        <p class="my-5">
+                            Wonder Tour is committed to bringing our clients the best in value 
+                            and quality travel arrangements. We are passionate about travel and 
+                            sharing the world's wonders with you.
+                        </p>
+                    </div>
+                    <div id="nav-2-content" class="nav_content">
+                        <p class="my-5">
+                            We are proud to offer excellent quality and value for money in our tours, 
+                            which give you the chance to experience your chosen destination in an authentic 
+                            and exciting way.
+                        </p>
+                    </div>
+                    <div id="nav-3-content" class="nav_content">
+                        <p class="my-5">
+                            Our mission is to provide the ultimate travel planning experience while becoming 
+                            a one-stop shop for every travel service available in the industry.
+                        </p>
+                    </div>
+                    
+                    <ul class="about_btn flex gap-5">
+                        <li><a href="" class="bg-[#38c3ba] border border-transparent text-white py-3 px-7 inline-block hover:bg-white hover:text-black hover:border hover:border-[#38c3ba]">Get in Touch</a></li>
+                        <li><a href="" class="bg-white border border-[#38c3ba] py-3 px-7 inline-block hover:bg-[#38c3ba] hover:text-white">Read More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services py-10">
+        <div class="container">
+            <div class="services_title">
+                <h2 class="text-center text-[2.5rem] font-semibold mb-10">Our Services</h2>
+            </div>
+            <div class="services_wrapper">
+                <div class="services_box flex flex-wrap w-[100%] md:grid lg:grid-cols-3 md:gap-5">
+                    <div class="box">
+                        <div class="services_content flex flex-col items-center text-center gap-5 lg:flex-row  lg:text-start lg:items-start">
+                            <div class="text-[2rem]">
+                                <i class="fa-solid fa-sliders fa-rotate-270 icon lg:items-start"></i>
+                            </div>
+                            <div>
+                                <h2 class="flex gap-2 text-[1.3rem] font-medium mb-2 justify-center lg:justify-start"><a href="" class="text-center hover:text-[#5c9793]">Personalized Matching</a></h2>
+                                <p class="text-[.9rem] opacity-80 lg:text-start">Our unique matching system lets you find just the tour you want for your next holiday.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="services_content flex flex-col items-center text-center gap-5 lg:flex-row  lg:text-start lg:items-start">
+                            <div class="text-[2rem]">
+                                <i class="fa-solid fa-award icon lg:items-start"></i>
+                            </div>
+                            <div>
+                                <h2 class="flex gap-2 text-[1.3rem] font-medium mb-2 justify-center lg:justify-start"><a href="" class="text-center hover:text-[#38c3ba]">Wide Variety of Tours</a></h2>
+                                <p class="text-[.9rem] opacity-80 lg:text-start">We offer a wide variety of personally picked tours with destinations all over the globe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="services_content flex flex-col items-center text-center gap-5 lg:flex-row  lg:text-start lg:items-start">
+                            <div class="text-[2rem]">
+                                <i class="fa-regular fa-star icon lg:items-start"></i>
+                            </div>
+                            <div>
+                                <h2 class="flex gap-2 text-[1.3rem] font-medium mb-2 justify-center lg:justify-start"><a href="" class="text-center hover:text-[#38c3ba]">High Qualified Service</a></h2>
+                                <p class="text-[.9rem] opacity-80 lg:text-start">Our tour managers are qualified, skilled, and friendly to bring you the best service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="services_content flex flex-col items-center text-center gap-5 lg:flex-row  lg:text-start lg:items-start">
+                            <div class="text-[2rem]">
+                                <i class="fa-solid fa-headset icon"></i>
+                            </div>
+                            <div>
+                                <h2 class="flex gap-2 text-[1.3rem] font-medium mb-2 justify-center lg:justify-start"><a href="" class="text-center hover:text-[#38c3ba]">24/7 Support</a></h2>
+                                <p class="text-[.9rem] opacity-80 lg:text-start">You can always get professional support from our staff 24/7 and ask any question you have.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="services_content flex flex-col items-center text-center gap-5 lg:flex-row  lg:text-start lg:items-start">
+                            <div class="text-[2rem]">
+                                <i class="fa-solid fa-fire icon"></i>
+                            </div>
+                            <div >
+                                <h2 class="flex gap-2 text-[1.3rem] font-medium mb-2 justify-center lg:justify-start"><a href="" class="text-center hover:text-[#38c3ba]">Handpicked Hotels</a></h2>
+                                <p class="text-[.9rem] opacity-80 lg:text-start">Our team offers only the best selection of affordable and luxury hotels to our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="services_content flex flex-col items-center text-center gap-5 lg:flex-row  lg:text-start lg:items-start">
+                            <div class="text-[2rem]">
+                                <i class="fa-solid fa-wallet icon"></i>
+                            </div>
+                            <div>
+                                <h2 class="flex gap-2 text-[1.3rem] font-medium mb-2 justify-center lg:justify-start"><a href="" class="text-center hover:text-[#38c3ba]">Best Price Guarantee</a></h2>
+                                <p class="text-[.9rem] opacity-80 lg:text-start">If you find tours that are cheaper than ours, we will compensate the difference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hot_tours py-10">
+        <div class="container">
+            <div class="review_title text-center">
+                <h1 class="text-[2.5rem] font-semibold mb-12">Hot Tours</h1>
+            </div>
+            <div class="hot_tours_item relative grid grid-cols-1 md:grid-cols-2 border border-gray-200 mb-16">
+                <div class="overflow-hidden">
+                    <img class="h-full item_img" src="./img/product-1.jpg" alt="">
+                </div>
+                <div class="tours_desc py-5 md:p-10 lg:p-16">
+                    <h2 class="text-2xl mb-4">Spain, Benidorm</h2>
+                    <ul class="flex items-center gap-3 mb-4">
+                        <li class="text-yellow-400">★	★	★	★	★</li>
+                        <li>4 customer reviews</li>
+                    </ul>
+                    <p class="mb-4">Benidorm is a buzzing resort with a big reputation for beach holidays. 
+                        Situated in sunny Costa Blanca, the town is one of the original Spanish beach resorts...
+                    </p>
+                    <a href="" class="py-3 px-5 inline-block border border-black text-lg hover:bg-[#01b3a7]">Buy This Tour</a>
+                </div>
+                <div class="tours_price p-5 bg-[#01b3a7]">
+                    <h2 class="text-white text-2xl">$790</h2>
+                </div>
+            </div>
+            <div class="hot_tours_item relative grid grid-cols-1 md:grid-cols-2 border border-gray-200">
+                <div class=" overflow-hidden">
+                <img class="h-full item_img" src="./img/product-2.jpg" alt="">
+                </div>
+                <div class="tours_desc py-5 md:p-10 lg:p-16">
+                    <h2 class="text-2xl mb-4">Mauritius Island, Africa</h2>
+                    <ul class="flex items-center gap-3 mb-4">
+                        <li class="text-yellow-400">★	★	★	★	★</li>
+                        <li>5 customer reviews</li>
+                    </ul>
+                    <p class="mb-4">The beautiful and inviting island nation of Mauritius is an ideal ‘flop and drop’ at 
+                        the conclusion of your safari. Indulge in the delightful scents of the fragrant...
+                    </p>
+                    <a href="" class="py-3 px-5 inline-block border border-black text-lg hover:bg-[#01b3a7]">Buy This Tour</a>
+                </div>
+                <div class="tours_price p-5 bg-[#01b3a7]">
+                    <h2 class="text-white text-2xl">$890</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-10">
+        <div class="container">
+            <div class="contact_title">
+                <h2 class="text-[2rem] md:text-[2.5rem] font-bold text-center">Different People — One Mission</h2>
+            </div>
+            <div class="contact_wrapper lg:flex lg:flex-row lg:gap-5 justify-center pt-[7rem] lg:pb-[5rem] lg:px-[5rem] lg:w-[50%] mx-[5rem]">
+                <div class="contact_item relative">
+                    <div class="contact_details text-center pt-[5rem] mb-[6rem] lg:mb-0 w-[20rem] m-auto">
+                        <span class="a_img"><img class="cursor-pointer" src="./img/user-1-118x118.jpg" alt=""></span>
+                        <a href=""><h3 class="font-semibold text-[1.2rem] hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">Diana Robinson</h3></a>
+                        <p class="text-[.9rem] my-1 text-[#01b3a7] font-medium">Founder, Owner</p>
+                        <a href=""><p class="text-[1.2rem] font-medium hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">+1 323-913-4688</p></a>
+                    </div>
+                </div>
+                <div class="contact_item relative">
+                    <div class="contact_details text-center pt-[5rem] mb-[6rem] lg:mb-0 w-[20rem] m-auto">
+                        <span class="a_img"><img class="cursor-pointer" src="./img/user-2-118x118.jpg" alt=""></span>
+                        <a href=""><h3 class="font-semibold text-[1.2rem] hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">Peter McMillan</h3></a>
+                        <p class="text-[.9rem] my-1 text-[#01b3a7] font-medium">Travel Agent</p>
+                        <a href=""><p class="text-[1.2rem] font-medium hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">+1 323-913-4688</p></a>
+                    </div>
+                </div>
+                <div class="contact_item relative">
+                    <div class="contact_details text-center pt-[5rem] mb-[6rem] lg:mb-0 w-[20rem] m-auto">
+                        <span class="a_img"><img class="cursor-pointer"  src="./img/user-3-118x118.jpg" alt=""></span>
+                        <a href=""><h3 class="font-semibold text-[1.2rem] hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">Jill Peterson</h3></a>
+                        <p class="text-[.9rem] my-1 text-[#01b3a7] font-medium">Tour Consultant</p>
+                        <a href=""><p class="text-[1.2rem] font-medium hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">+1 323-913-4688</p></a>
+                    </div>
+                </div>
+                <div class="contact_item relative">
+                    <div class="contact_details text-center pt-[5rem] mb-[6rem] lg:mb-0 w-[20rem] m-auto">
+                        <span class="a_img"><img class="cursor-pointer" src="./img/user-4-118x118.jpg" alt=""></span>
+                        <a href=""><h3 class="font-semibold text-[1.2rem] hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">James Smith</h3></a>
+                        <p class="text-[.9rem] my-1 text-[#01b3a7] font-medium">PR Manager</p>
+                        <a href=""><p class="text-[1.2rem] font-medium hover:text-[#01b3a7] hover:transition-all hover:ease-in hover:duration-300 transition-all ease-in duration-300">+1 323-913-4688</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book py-10 text-center">
+        <div class="container">
+            <div class="book_content relative py-[4rem] text-white">
+                <h1 class=" flex flex-col text-center text-[3rem] mb-3 line leading-[3rem]"><span class="font-bold">First-class Impressions</span> are Waiting for You!</h1>
+                <p class=" m-auto max-w-[40rem] text-center mb-7">Our agency offers travelers various tours and excursions with destinations all over the world. 
+                    Browse our website to find your dream tour!
+                </p>
+                <a href="" class="font-medium inline-block py-2 px-10 border-2 border-[#01b3a7] bg-[#01b3a7] hover:text-white hover:border-white hover:bg-transparent">Book a Tour Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="review py-[5rem] bg-[#f7f7f7]">
+        <div class="container">
+            <div class="review_title text-center">
+                <h1 class="text-[2rem] lg:text-[2.5rem] font-semibold mb-12">What People Say</h1>
+            </div>
+            <div class="review_wrapper lg:flex lg:flex-row  gap-7 py-5">
+                <div class="review_item mb-[5rem] lg:mb-0 p-[2rem] items-center text-center w-auto bg-white relative">
+                    <div class="p-3 bg-white rounded-full absolute -top-[2.5rem] left-[50%] -translate-x-[50%] overflow-hidden cursor-pointer">
+                        <img  src="./img/user-5-87x87.jpg" alt="">
+                    </div>
+                    <p class="mt-[2.5rem] mb-[1rem] text-[.9rem]">Just wanted to say many, many thanks for helping me set up an amazing Costa Rican adventure! 
+                        My nephew and I had a great time! All of the accommodations were perfect, thank you!
+                    </p>
+                    <a href="" class="text-[#01b3a7] text-[1.2rem] cursor-pointer hover:text-teal-600">Rupert Wood</a>
+                </div>
+                <div class="review_item mb-[5rem] lg:mb-0 p-[2rem] items-center text-center w-auto bg-white relative">
+                    <div class="p-3 bg-white rounded-full absolute -top-[2.5rem] left-[50%] -translate-x-[50%] overflow-hidden cursor-pointer">
+                        <img  src="./img/user-6-87x87.jpg" alt="">
+                    </div>
+                    <p class="mt-[2.5rem] mb-[1rem] text-[.9rem]">I wanted to thank you very much for planning the trip to France for my sister and me. It was amazing 
+                        and exceeded my expectations! We had a wonderful time and were very pleased.
+                    </p>
+                    <a href="" class="text-[#01b3a7] text-[1.2rem] cursor-pointer hover:text-teal-600">Catherine Williams</a>
+                </div>
+                <div class="review_item p-[2rem] items-center text-center w-auto bg-white relative">
+                    <div class="p-3 bg-white rounded-full absolute -top-[2.5rem] left-[50%] -translate-x-[50%] overflow-hidden cursor-pointer">
+                        <img  src="./img/user-7-87x87.jpg" alt="">
+                    </div>
+                    <p class="mt-[2.5rem] mb-[1rem] text-[.9rem]">We had a marvelous time in our travels to Madagascar, Zimbabwe, and Botswana, we had just wonderful 
+                        experiences. Your service was amazing and everyone was very attentive!
+                    </p>
+                    <a href="" class="text-[#01b3a7] text-[1.2rem] cursor-pointer hover:text-teal-600">Sam Peterson</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="awards counter-body py-[5rem] text-center">
+        <div class="container">
+            <div class="awards_title">
+                <h2 class="text-[2rem] lg:text-[2.5rem] font-semibold">7 Years of Following The Dream</h2>
+            </div>
+            <div class="awards_wrapper flex flex-col md:flex-row gap-[3rem]">
+                <div class="awards_item relative w-[100%] mt-[2rem]">
+                    <img class="align-middle inline-block max-w-[65%] lg:max-w-[100%] h-auto" src="./img/thumnails-info-1-370x303.jpg" alt="">
+                    <div class="bg-white absolute left-[50%] top-[7%] flex flex-col justify-center overflow-hidden w-[58%] lg:w-[90%] h-[87%] -translate-x-[50%] items-center">
+                        <h2 class="text-[3rem] lg:text-[5rem] font-bold counter" data-target="12">0</h2>
+                        <h3 class="lg:w-[10rem] text-[1.2rem] lg:text-[1.6rem] font-semibold leading-8">International Awards</h3>
+                    </div>
+                </div>
+                <div class="awards_item relative w-[100%] lg:mt-[2rem]">
+                    <img class="align-middle inline-block max-w-[65%] lg:max-w-[100%] h-auto" src="./img/thumnails-info-1-370x303.jpg" alt="">
+                    <div class="bg-white absolute left-[50%] top-[7%] flex flex-col justify-center overflow-hidden w-[58%] lg:w-[90%] h-[87%] -translate-x-[50%] items-center">
+                        <h2 class="text-[3rem] lg:text-[5rem] font-bold counter" data-target="500">0+</h2>
+                        <h3 class="lg:w-[10rem] text-[1.2rem] lg:text-[1.6rem] font-semibold leading-8">Happy Travelers</h3>
+                    </div>
+                </div>
+                <div class="awards_item relative w-[100%] lg:mt-[2rem]">
+                    <img class="align-middle inline-block max-w-[65%] lg:max-w-[100%] h-auto" src="./img/thumnails-info-1-370x303.jpg" alt="">
+                    <div class="bg-white absolute left-[50%] top-[7%] flex flex-col justify-center overflow-hidden w-[58%] lg:w-[90%] h-[87%] -translate-x-[50%] items-center">
+                        <h2 class="text-[3rem] lg:text-[5rem] font-bold counter" data-target="42">0</h2>
+                        <h3 class="lg:w-[10rem] text-[1.2rem] lg:text-[1.6rem] font-semibold leading-8">Team Members</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signup py-[5rem] text-center">
+        <div class="container">
+            <div class="signup_wrapper">
+                <div class="signup_title text-white">
+                    <h2 class="text-[2rem] lg:text-[2.5rem] font-semibold mb-[1rem]">Sign Up for 25% Discount</h2>
+                    <p class="lg:w-[40rem] m-auto">Want to get an instant discount for your next tour? Leave your email
+                         and sign up for our newsletter with 25% off all our offers.
+                    </p>
+                </div>
+                <div class="signup_form mt-[1.5rem] text-white flex flex-col justify-center gap-3 lg:flex-row ">
+                    <div >
+                        <input class="form-input form-control-has-validation" type="email" id="email-subscribe" name="email" data-constraints="@Email @Required">
+                        <span class="form-validation">The text field is required.</span>
+                        <label class="form-label rd-input-label" for="email-subscribe"></label>
+                    </div>
+                    <a href="" class="text-center font-medium inline-block py-2 px-10 border-2 border-[#01b3a7] bg-[#01b3a7] hover:text-white hover:border-white hover:bg-transparent">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog py-[5rem] relative">
+        <div class="container">
+            <div class="blog_title pb-[2rem]">
+                <h2 class="text-[2rem] lg:text-[2.5rem] font-semibold text-center">Latest Blog Posts</h2>
+            </div>
+            <div class="blog_slider">
+                <div>
+                    <div class="the_post pb-10 relative">
+                        <img class="w-full h-full cursor-pointer" src="./img/blog-post-1-568x492.jpg" alt="">
+                        <div class="the_post_title text-center shadow-md py-6 flex flex-col gap-2">
+                            <div class="bg-white">
+                                <h3 class="text-2xl font-semibold mb-4 w-[25rem] z-10">Top 10 Hotels: Rating by Wonder Tour Travel Experts</h3>
+                                <p class="z-10">May 17, 2020</p>
+                            </div>
+                            <ul class="blog_links flex gap-3 -z-10">
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <div class="blog_links_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="the_post pb-10 relative">
+                        <img class="w-full h-full cursor-pointer" src="./img/blog-post-2-568x492.jpg" alt="">
+                        <div class="the_post_title text-center shadow-md py-6 flex flex-col gap-2">
+                            <div class="bg-white">
+                                <h3 class="text-2xl font-semibold mb-4 w-[25rem] z-10">Your Personal Guide to 5 Best Places to Visit on Earth</h3>
+                                <p class="z-10">May 12, 2020</p>
+                            </div>
+                            <ul class="blog_links flex gap-3 -z-10">
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <div class="blog_links_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="the_post pb-10 relative">
+                        <img class="w-full h-full cursor-pointer" src="./img/blog-post-3-568x492.jpg" alt="">
+                        <div class="the_post_title text-center shadow-md py-6 flex flex-col gap-2">
+                            <div class="bg-white">
+                                <h3 class="text-2xl font-semibold mb-4 w-[25rem] z-10">How to Find the BestTravel Deals for Your Next Holiday</h3>
+                                <p class="z-10">May 17, 2020</p>
+                            </div>
+                            <ul class="blog_links flex gap-3 -z-10">
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <div class="blog_links_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="the_post pb-10 relative">
+                        <img class="w-full h-full cursor-pointer" src="./img/blog-post-4-568x492.jpg" alt="">
+                        <div class="the_post_title text-center shadow-md py-6 flex flex-col gap-2">
+                            <div class="bg-white">
+                                <h3 class="text-2xl font-semibold mb-4 w-[25rem] z-10">5 Places to Visit in Montana for Superb Hiking</h3>
+                                <p class="z-10">May 12, 2020</p>
+                            </div>
+                            <ul class="blog_links flex gap-3 -z-10">
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <div class="blog_links_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="the_post pb-10 relative">
+                        <img class="w-full h-full cursor-pointer" src="./img/blog-post-5-568x492.jpg" alt="">
+                        <div class="the_post_title text-center shadow-md py-6 flex flex-col gap-2">
+                            <div class="bg-white">
+                                <h3 class="text-2xl font-semibold mb-4 w-[25rem] z-10">12 Things Not to Do When You Travel</h3>
+                                <p class="z-10">May 17, 2020</p>
+                            </div>
+                            <ul class="blog_links flex gap-3 -z-10">
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <div class="blog_links_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="the_post pb-10 relative">
+                        <img class="w-full h-full cursor-pointer" src="./img/blog-post-1-568x492.jpg" alt="">
+                        <div class="the_post_title text-center shadow-md py-6 flex flex-col gap-2">
+                            <div class="bg-white">
+                                <h3 class="text-2xl font-semibold mb-4 w-[25rem] z-10">Top 10 Hotels: Rating by Wonder Tour Travel Experts</h3>
+                                <p class="z-10">May 17, 2020</p>
+                            </div>
+                            <ul class="blog_links flex gap-3 -z-10">
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a class="circle_bg" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <div class="blog_links_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </section>
+
+    <section class="gallery bg-[#f7f7f7] text-center relative">
+        <div class="gallery_title pb-[2rem]">
+            <h2 class="font-semibold text-center bg-white p-2 inline-block min-w-[15rem]">Gallery</h2>
+        </div>
+        <div class="gallery_slider pb-[4rem]">
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-1-270x195.jpg" data-lightbox="gallery1">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-1-270x195.jpg" alt="">
+                        <div class="inner_box ">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-2-270x195.jpg" data-lightbox="gallery2">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-2-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-3-270x195.jpg" data-lightbox="gallery3">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-3-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-4-270x195.jpg" data-lightbox="gallery4">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-4-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-5-270x195.jpg" data-lightbox="gallery5">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-5-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-6-270x195.jpg" data-lightbox="gallery6">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-6-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-7-270x195.jpg" data-lightbox="gallery7">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-7-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-1-270x195.jpg" data-lightbox="gallery8">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-1-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-2-270x195.jpg" data-lightbox="gallery9">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-2-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_batch">
+                <div class="gallery_item m-auto relative overflow-hidden">
+                    <a href="./img/gallery-image-3-270x195.jpg" data-lightbox="gallery10">
+                        <img class="w-full h-full scale-110 transition-all duration-500" src="./img/gallery-image-3-270x195.jpg" alt="">
+                        <div class="inner_box overlay">
+                            <div class="inner_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer bg-[#162e44] py-[5rem]">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer-top">
+                    <div class="top-contact text-white">
+                        <div class="top-contact_title text-[1.2rem] mb-[2rem] font-medium">
+                            <h3>CONTACT US</h3>
+                        </div>
+                        <table class="p-[3rem]">
+                            <tr >
+                                <td ><i class="fa-solid fa-phone text-[#01b3a7]"></i></td>
+                                <td class="cursor-pointer hover:text-[#01b3a7]">+1 323-913-4688</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope text-[#01b3a7]"></i></td>
+                                <td>info@demolink.org</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-paper-plane text-[#01b3a7]"></i></td>
+                                <td>4730 Crystal Springs Dr, Los Angeles, CA 90027</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <div class="top-news"></div>
+                    <div class="top-links"></div>
+                </div>
+                <div class="footer-bot">
+                    <p></p>
+                    <div class="bot-social">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.min.js"></script>
+    <script type="module">
+      
+        var slider = tns({
+          container: '.custom_slider',
+          items: 1,
+          slideBy: 'page',
+          autoplay: true,
+          controls: false,
+          axis: 'vertical'
+        });
+
+        var slider = tns({
+          container: '.blog_slider',
+          items: 2,
+          gutter: 30,
+          slideBy: 'page',
+          autoplay: true,
+          controls: false,
+          navPosition: 'bottom',
+          responsive: {
+            280: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 1
+            },
+            900: {
+                items: 2,
+                gutter: 30
+            },
+          }
+        });
+
+        var slider = tns({
+          container: '.gallery_slider',
+          items: 5,
+          gutter: 40,
+          slideBy: 'page',
+          autoplay: true,
+          controls: false,
+          navPosition: 'bottom',
+          responsive: {
+            280: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 1
+            },
+            500: {
+                items: 3,
+                gutter: 20
+            },
+            900: {
+                items: 5,
+                gutter: 40
+            },
+          }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          disableScrolling: true,
+        });
+        
+    </script>
+
+    <script>
+        const header_details = document.querySelector('.header_details');
+        const toggle_details = document.querySelector('.toggle_details');
+        toggle_details.addEventListener('click', ()=>{
+            toggle_details.classList.toggle('active');
+            header_details.classList.toggle('active');
+            toggle_menu.classList.remove('active');
+            header_menu.classList.remove('active');
+        })
+        const header_menu = document.querySelector('.header_menu');
+        const toggle_menu = document.querySelector('.toggle_menu');
+        toggle_menu.addEventListener('click', ()=>{
+            toggle_menu.classList.toggle('active');
+            header_menu.classList.toggle('active');
+            header_details.classList.remove('active');
+            toggle_details.classList.remove('active');
+        })
+        const contentNav = document.querySelectorAll('.nav_content')
+
+        const aboutNav = document.querySelectorAll('.about_nav li');
+        aboutNav.forEach((aboutNavLi) => {
+            aboutNavLi.addEventListener("click", ()=>{
+                removeAboutNavActive();
+                aboutNavLi.classList.add('active');
+                const navContent = document.querySelector(`#${aboutNavLi.id}-content`);
+                removeContentActive();
+                navContent.classList.add('active');
+            });
+        });
+        function removeAboutNavActive(){
+            aboutNav.forEach((nav) => {
+                nav.classList.remove('active');
+            });
+        }
+        function removeContentActive(){
+            contentNav.forEach((content) => {
+                content.classList.remove('active');
+            });
+        }
+        
+        let section_counter = document.querySelector(".counter-body");
+        let counter = document.querySelectorAll(".counter");
+
+        let counterObserver = new IntersectionObserver(
+            (entries, observer) => {
+                let [entry] = entries;
+                if (!entry.isIntersecting) return;
+
+                counter.forEach((counter) => {
+                    function updateCounter() {
+                        const targetNumber = +counter.dataset.target;
+                        const initialNumber = +counter.innerText;
+
+                        const incrementPerNumber = 1;
+
+                        if (initialNumber < targetNumber){
+                            counter.innerText = Math.ceil(
+                                initialNumber + incrementPerNumber
+                            );
+                            setTimeout(updateCounter, 1);
+                        } else {
+                            counter.innerText = targetNumber;
+                        }
+                    }
+                    updateCounter();
+                });
+                observer.unobserve(section_counter);
+            },
+            {
+                root: null,
+                threshold: window.innerWidth > 768 ? 0.4 : 0.3,
+            }
+        );
+        counterObserver.observe(section_counter);
+
+        
+    </script>
+</body>
+</html>
